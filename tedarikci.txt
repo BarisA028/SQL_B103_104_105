@@ -1,0 +1,9 @@
+Create Database Tedarikci;
+CREATE TABLE Tedarikciler44
+(musteri_id char(5),ismi varchar(20),adresi varchar(50),ulasim_tarihi date);
+CREATE TABLE Teddarikci_Ziyaret01
+AS
+SELECT ismi,adresi,ulasim_tarihi FROM Tedarikciler44
+INSERT INTO Tedarikciler44 VALUES ('Ahmet','Pendik_Istanbul',now());
+insert into Tedarikciler44 (ismi,ulasim_tarihi) values ('Fahri',now());
+SELECT * FROM Tedarikciler44
