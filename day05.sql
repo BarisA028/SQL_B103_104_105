@@ -1,3 +1,4 @@
+--group by
 CREATE TABLE personel
 (
 id int,
